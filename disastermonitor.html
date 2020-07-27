@@ -1,0 +1,188 @@
+<!doctype html>
+<!--
+   GIBS Web Examples
+   Copyright 2013 - 2018 United States Government as represented by the
+   Administrator of the National Aeronautics and Space Administration.
+   All Rights Reserved.
+   Licensed under the Apache License, Version 2.0 (the 'License');
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+       http://www.apache.org/licenses/LICENSE-2.0
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an 'AS IS' BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151783246-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151783246-2');
+</script>
+
+
+    <title> 🛰️ Natural Disaster Monitor 🌎 IBM Call for Code 2020 🚀 </title>
+    <link rel='stylesheet' href='NASApi/ol.css' />
+    <link rel='stylesheet' href='NASApi/demo.css' />
+    <link rel='stylesheet' href='NASApi/main.css' />
+    <script src='NASApi/ol.js'></script>
+    <script src='NASApi/main.js'></script>
+     <meta charset="utf-8">
+</head>
+
+<body>
+
+<header id="header">
+        <h1><a href="#">🛰️ Natural Disaster Monitor 🌎  <span> @IBM Call for Code 2020 </span></a></h1>
+        <a href="#menu">Menu</a>
+      </header>
+
+    <div id='map'></div>
+    <div id='day-panel'>
+        <div id='day-label'></div>
+        <input id="day-slider" type="range" min="-6" max="0" value="0"></div>
+    </div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;  
+  position: absolute; /* Position them relative to the browser window */
+  left: 10px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 100px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+  left: 10;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+</head>
+<body>
+
+<h2>Search/Filter Dropdown</h2>
+<p>Click on the button to open the dropdown menu, and use the input field to search for a specific dropdown link.</p>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Country</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <a href="#">USA</a>
+    <a href="#">México</a>
+    <a href="#">Brazil</a>
+    <a href="#">Colombia</a>
+    <a href="#">Europe</a>
+    <a href="#">Asia</a>
+    <a href="#">Africa</a>
+    <a href="#">Ocenia</a>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "017db45f-0a9c-4ff2-8d9f-b240ebc33414", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "b233662e-635e-4cb9-a594-00a7e81d9600", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+    <div id='attribution'>
+        <a href='#'>🗓️ Date: 28/07/2020 </a>       
+         <a href='#'>📍 Sonora, MX </a>
+         <a href='#'>💧 Humidity: 82% </a>
+         <a href='#'>💨 Air Quality: 50  </a>
+         <a href='#'>🤒 Fires: None</a>
+         <a href='#'>🤒 Floods: None</a>
+         <a href='#'>📊 GDP: $462 USD </a>
+         <a href='#'>✅ Risk Level: Low  </a>
+        <a href='#'>🌐 Github Repo</a>
+    </div>
+</body>
+
+</html>
