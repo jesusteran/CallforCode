@@ -106,4 +106,18 @@ var initParams = {
 bmsPush.initialize(params, callback); 
  });
 
+var bmsPush = new BMSPush()
+ function callback(response) {
+ 	alert(response.response)
+ }
+ var initParams = {
+"appGuid": "61aab8be-bde1-43ee-9110-0cba7cf68fdb",
+ 	"appRegion":"us-south",
+		 "clientSecret": "73e2df6f-ba18-4f26-811a-a26c8f4dde5a"
+ }
+ bmsPush.initialize(initParams, callback)
+ bmsPush.register(function(response) {
+ 	alert(response.response)
+ });
+
 };
