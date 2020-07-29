@@ -69,24 +69,6 @@
 
 function myfunction () {
 var bmsPush = new BMSPush()
-function callback(response) {
-  alert(response.response)
-}
-var initParams = {
-"appGuid": "61aab8be-bde1-43ee-9110-0cba7cf68fdb",
-"appRegion":"us-south",
-"clientSecret": "73e2df6f-ba18-4f26-811a-a26c8f4dde5a",
-  "iam_apikey_description": "Auto-generated for key 5c0d8acd-87c6-4ddf-aa33-d3d22ebc531c",
-  "iam_apikey_name": "Service credentials-1",
-  "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
-  "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/3f454f85f423d41f0121b737af0edaae::serviceid:ServiceId-36707f01-9f78-496c-8404-bd4047c6e92c",
-  "plan": "LITE",
-  "url": "https://imfpush.us-east.bluemix.net/imfpush/v1/apps/61aab8be-bde1-43ee-9110-0cba7cf68fdb"
-}
-bmsPush.initialize(params, callback); 
- });
-
-var bmsPush = new BMSPush()
  function callback(response) {
  	alert(response.response)
  }
