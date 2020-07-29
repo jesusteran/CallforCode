@@ -49,6 +49,23 @@
         <input id="day-slider" type="range" min="-6" max="0" value="0"></div>
     </div>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "017db45f-0a9c-4ff2-8d9f-b240ebc33414", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "b233662e-635e-4cb9-a594-00a7e81d9600", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+<script src="BMSPushSDK.js" async></script>
+
 <style>
 .dropbtn {
 background-color: #4CAF50;
@@ -114,31 +131,6 @@ background-color: #4CAF50;
 </style>
 </head>
 <body>
-
-
-<script>
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-function filterFunction() {
-  var input, filter, ul, li, a, i;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  div = document.getElementById("myDropdown");
-  a = div.getElementsByTagName("a");
-  for (i = 0; i < a.length; i++) {
-    txtValue = a[i].textContent || a[i].innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      a[i].style.display = "";
-    } else {
-      a[i].style.display = "none";
-    }
-  }
-}
-</script>
 
 
 </body>
