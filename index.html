@@ -66,7 +66,7 @@
 </script>
 
 <script src="BMSPushSDK.js" async></script>
-
+<script>
 function myfunction () {
 var bmsPush = new BMSPush()
  function callback(response) {
@@ -80,7 +80,8 @@ var bmsPush = new BMSPush()
  bmsPush.initialize(initParams, callback)
  bmsPush.register(function(response) {
  	alert(response.response)
- });
+ }); 
+</script>
 
 
 <style>
