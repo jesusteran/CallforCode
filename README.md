@@ -1,4 +1,4 @@
-# Stormy Bot Documentation 🖥️ 😷 https://stormybot.talktoai.co/
+# 🤖 Stormy Bot Documentation🌪 https://stormybot.talktoai.co/
 ## IBM Call for Code 2020
 ### Global Competition 
 ###### Mentors & Moderators during challenge: IBM Engineers from Colombia & Peru
