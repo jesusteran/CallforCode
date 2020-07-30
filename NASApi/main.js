@@ -53,7 +53,7 @@ window.onload = function () {
       format: 'image/jpeg',
       matrixSet: 'EPSG4326_250m',
       tileGrid: new ol.tilegrid.WMTS({
-        origin: [-190, 90],
+        origin: [-193, 94],
         resolutions: [
           0.5625,
           0.28125,
