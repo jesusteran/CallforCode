@@ -58,6 +58,37 @@
   firebase.initializeApp(firebaseConfig);
 </script>
 
+ <style>
+.btn {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.success {background-color: #4CAF50;} /* Green */
+.success:hover {background-color: #46a049;}
+
+.info {background-color: #2196F3;} /* Blue */
+.info:hover {background: #0b7dda;}
+
+.warning {background-color: #ff9800;} /* Orange */
+.warning:hover {background: #e68a00;}
+
+.danger {background-color: #f44336;} /* Red */ 
+.danger:hover {background: #da190b;}
+
+.default {background-color: #e7e7e7; color: black;} /* Gray */ 
+.default:hover {background: #ddd;}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.center {
+  width: 600px;
+}
+</style>
 
 </head>
 
@@ -73,6 +104,17 @@
         <input id="day-slider" type="range" min="-6" max="0" value="0"></div>
     </div>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <div id='attribution' class="center" class="container">
+<h1>Stormy Alerts</h1>
+<button class="btn success">Alerts</button>
+<button class="btn danger">Danger</button>
+<button class="btn info">Warning</button>
+<button class="btn warning">Predictions</button>
+
+
+                    
+</div>
 
 <script>
   window.watsonAssistantChatOptions = {
@@ -323,69 +365,7 @@ var bmsPush = new BMSPush()
  	alert(response.response);
 </script>
 
-<style>
-.dropbtn {
-background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;  
-  position: absolute; /* Position them relative to the browser window */
-  left: 10px; /* Position them outside of the screen */
-  transition: 0.3s; /* Add transition on hover */
-  padding: 15px; /* 15px padding */
-  width: 100px; /* Set a specific width */
-  text-decoration: none; /* Remove underline */
-  font-size: 20px; /* Increase font size */
-  color: white; /* White text color */
-  border-radius: 0 5px 5px 0;
-}
 
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #3e8e41;
-  left: 10;
-}
-
-#myInput {
-  box-sizing: border-box;
-  background-image: url('searchicon.png');
-  background-position: 14px 12px;
-  background-repeat: no-repeat;
-  font-size: 16px;
-  padding: 14px 20px 12px 45px;
-  border: none;
-  border-bottom: 1px solid #ddd;
-}
-
-#myInput:focus {outline: 3px solid #ddd;}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f6f6f6;
-  min-width: 230px;
-  overflow: auto;
-  border: 1px solid #ddd;
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}
-</style>
 </head>
 <body>
 
