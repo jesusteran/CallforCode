@@ -41,59 +41,6 @@
     <script src='NASApi/main.js'></script>
      <meta charset="utf-8">
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyCmVBPdtNbaFVYX8yaRvzCmimVZb97eDNk",
-    authDomain: "basileabot.firebaseapp.com",
-    databaseURL: "https://basileabot.firebaseio.com",
-    projectId: "basileabot",
-    storageBucket: "basileabot.appspot.com",
-    messagingSenderId: "607272504881",
-    appId: "1:607272504881:web:137edab4bf3d01f993cf10"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
-
- <style>
-.btn {
-  border: none;
-  color: white;
-  padding: 14px 28px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.success {background-color: #4CAF50;} /* Green */
-.success:hover {background-color: #46a049;}
-
-.info {background-color: #2196F3;} /* Blue */
-.info:hover {background: #0b7dda;}
-
-.warning {background-color: #ff9800;} /* Orange */
-.warning:hover {background: #e68a00;}
-
-.danger {background-color: #f44336;} /* Red */ 
-.danger:hover {background: #da190b;}
-
-.default {background-color: #e7e7e7; color: black;} /* Gray */ 
-.default:hover {background: #ddd;}
-.container {
-  display: flex;
-  justify-content: center;
-}
-.center {
-  width: 600px;
-}
-</style>
-
 </head>
 
 <body>
@@ -109,16 +56,30 @@
     </div>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <div id='attribution' class="center" class="container">
+   <div id='attribution' class="center" class="container">
 <h1>Stormy Alerts</h1>
-<button class="btn success">Alerts</button>
-<button class="btn danger">Danger</button>
-<button class="btn info">Warning</button>
-<button class="btn warning">Predictions</button>
+<button onclick="alertFunction()" class="btn success">Alerts</button>
+<button onclick="dangerFunction()" class="btn danger">Danger</button>
+<button onclick="warningFunction()" class="btn info">Warning</button>
+<button onclick="predictionFunction()" class="btn warning">Predictions</button>
 
+<script>
+function alertFunction() {
+  alert("📍Houston, Texas: A batch of drier air will move in late in the afternoon, pushing away the tropical moisture left behind by Hanna.");
+}
 
-                    
-</div>
+function dangerFunction() {
+  alert("📍Houston, Texas: A batch of drier air will move in late in the afternoon, pushing away the tropical moisture left behind by Hanna.");
+}
+
+function warningFunction() {
+  alert("📍Houston, Texas: Water Rescues Continue in South Texas After Hanna Departs.");
+}
+
+function predictionFunction() {
+  alert("📍Houston, Texas:Forecasters said Hanna could bring 6 to 12 inches of rain, with isolated maximum amounts of 18 inches through Monday in south Texas and in neighboring locations in northeast Mexico.");
+}
+</script>                  
 
 <script>
   window.watsonAssistantChatOptions = {
