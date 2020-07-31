@@ -15,6 +15,10 @@
 
 #### How it works:
 
+[![Stormy Bot Live Demo](https://img.youtube.com/vi/7bLHkBmf1UM/3.jpg)](https://youtu.be/7bLHkBmf1UM)
+
+
+
 > Phase 1: Earth Exploration
 
 We use the ***NASA's Global Imagery Browse Services (GIBS) APIs*** as a Data Provider for the satellite imagery and visualize the Data Layers using  ***Web Map Title Service (WMTS)*** such as:
