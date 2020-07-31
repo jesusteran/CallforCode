@@ -46,41 +46,7 @@ We use the ***NASA's Global Imagery Browse Services (GIBS) APIs*** as a Data Pro
     });
 ```
 
-
-> Phase 2: Get COVID19 cases
-
-We use the ***COVID19 API*** from Data Providers such as World Health Organization to get the epidemiologic data of ***Total Test results*** values by Country/Region & Date such as:       
-- Positive cases: ${covid19['positive']}
-- Negative cases: ${covid19['negative']}
-- Hospitalized: ${covid19['hospitalized']}
-- Death: ${covid19['death']}`
-- Recovered: ${covid19['recovered']}`
-
-- URL: curl --location --request GET 'https://www.who.int/rss-feeds/news-english.xml'
-
-```<script>
-      const getCovidStats = async() => {
-        try {
-          const response = await fetch('https://www.who.int/rss-feeds/news-english.xml');
-          const usa = await response.json();
-
-          covid19 = country[0];
-        }
-        finally {
-          markup = `
-            Tests:          ${covid19['totalTestResults']}
-            Positive:       ${covid19['positive']}
-            Negative:       ${covid19['negative']}
-            Hospitalized:   ${covid19['hospitalized']}
-            Deaths:         ${covid19['death']}`
-          document.getElementById('main').innerText = markup;
-        }
-      };
-      getCovidStats();
-    </script>
-```    
-
-> Phase 3: Aggregate External Data from APIs
+> Phase 2: Aggregate External Data from APIs
 
 #### What's next?
 
