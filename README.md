@@ -2,7 +2,7 @@
 ## IBM Call for Code 2020
 ### Global Competition 
 ###### Developers: Leandro C, Pablo C & Pablo V
-###### ||Tech Stak: IMB Watson + IMB Notifications + NASA GIBS API ||
+###### ||Tech Stak: IBM Watson + IBM Push Notifications + NASA GIBS API ||
 ###### ||Data Sources: [NASA GIBS API](https://wiki.earthdata.nasa.gov/display/GIBS/GIBS+API+for+Developers) ||
 ###### ||Region: Latin America & Caribbean 🌎 ||Challenge: Climate Change ||
 
