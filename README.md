@@ -17,6 +17,8 @@
 
 [![Stormy Bot Live Demo](https://img.youtube.com/vi/7bLHkBmf1UM/2.jpg)](https://youtu.be/7bLHkBmf1UM)
 
+![Test Image 4](https://i.ibb.co/x7WMPDn/Screen-Shot-2020-07-31-at-04-04-22.png)
+
 
 
 > Phase 1: Earth Exploration
