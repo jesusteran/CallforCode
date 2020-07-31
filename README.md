@@ -1,11 +1,10 @@
 # 🤖 Stormy Bot Documentation🌪 https://stormybot.talktoai.co/
 ## IBM Call for Code 2020
 ### Global Competition 
-###### Mentors & Moderators during challenge: IBM Engineers from Colombia & Peru
+###### Developers: Leandro C, Pablo C & Pablo V
 ###### ||Tech Stak: IMB Watson + IMB Notifications + NASA GIBS API ||
 ###### ||Data Sources: [NASA GIBS API](https://wiki.earthdata.nasa.gov/display/GIBS/GIBS+API+for+Developers) ||
-###### ||Challenge: Climate Change ||
-###### ||Region: Latin America & Caribbean 🌎 ||
+###### ||Region: Latin America & Caribbean 🌎 ||Challenge: Climate Change ||
 
 #### Stormy Bot is a virtual assistant trained with IBM Watson on monitoring near-real time @NASA data about Floods, Fires, Storms and Volcanoes Hazard around the world! Our goal is to help building adaptable and Resilient Cities to Natural Disasters!
 
