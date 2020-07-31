@@ -15,7 +15,7 @@
 
 #### How it works:
 
-[![Stormy Bot Live Demo](https://img.youtube.com/vi/7bLHkBmf1UM/3.jpg)](https://youtu.be/7bLHkBmf1UM)
+[![Stormy Bot Live Demo](https://img.youtube.com/vi/7bLHkBmf1UM/2.jpg)](https://youtu.be/7bLHkBmf1UM)
 
 
 
